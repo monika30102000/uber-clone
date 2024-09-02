@@ -19,9 +19,9 @@ resource "aws_eks_node_group" "my_node_group" {
   subnet_ids         = ["subnet-02160107bcfbf413e", "subnet-064cc886dd33533ad"]      # Replace with your subnet IDs
 
   scaling_config {
-    desired_size = 1
-    max_size     = 2
-    min_size     = 1
+    desired_size = 0
+    max_size     = 0
+    min_size     = 0
   }
 
   tags = {
